@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+:root {
+    --white-clr: rgb(255, 255, 255);
+    --black-clr: rgb(0, 0, 0);
+    --teal-clr: rgb(0, 235, 199);
+    --gold-clr: rgb(253, 226, 79);
+    --light-blue-clr: rgb(207, 186, 255);
+    --light-gray-clr: rgb(236, 236, 236);
+}
+
+body {
+    width: 100vw;
+    height: auto;
+}
+
+button {
+    cursor: pointer;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 30px;
+
+    .logo {
+        width: 200px;
+    }
+
+    & ul {
+        display: flex;
+        gap: 20px;
+
+        & li {
+            list-style: none;
+
+            & a {
+                text-decoration: none;
+                font-size: 22px;
+                font-weight: 500;
+                color: var(--black-clr);
+            }
+        }
+    }
+
+    .buttons {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        & button {
+            padding: 12px 30px;
+            font-size: 22px;
+            font-weight: 500;
+            border-radius: 30px;
+            border: none;
+            outline: none;
+            background-color: var(--light-gray-clr);
+
+            &:nth-child(2) {
+                color: var(--white-clr);
+                background-color: var(--black-clr);
+            }
+
+            &:last-child {
+                background-color: transparent;
+                padding: 0;
+                width: 36px;
+                height: 36px;
+
+                & img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+
+.home-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background: url(../img/background.png) center/cover;
+    padding: 12% 0 7%;
+
+    .home-section-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 100px 40px;
+        background-color: var(--white-clr);
+        border-radius: 10px;
+
+        & h1 {
+            font-size: 45px;
+            font-weight: 500;
+            margin-bottom: 40px;
+        }
+
+        .home-section-form-inputs {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 20px;
+            width: 100%;
+
+            & select {
+                font-size: 22px;
+                font-weight: 500;
+                width: 222px;
+                border-radius: 8px;
+                padding: 12px 20px;
+                background-color: var(--light-gray-clr);
+                border: none;
+                outline: none;
+                appearance: none;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>'); /* Custom SVG arrow */
+                background-repeat: no-repeat;
+                background-position: right 20px center;
+                background-size: 18px;
+            }
+
+            & input {
+                width: 100%;
+                border-radius: 8px;
+                padding: 12px 20px;
+                border: none;
+                outline: none;
+                font-size: 22px;
+                font-weight: 500;
+                background-color: var(--light-gray-clr);
+                /* text-align: center; */
+
+                &::placeholder {
+                    color: var(--black-clr);
+                }
+
+                &::-webkit-inner-spin-button {
+                    display: none;
+                }
+            }
+
+            & button {
+                padding: 12px 60px;
+                border-radius: 30px;
+                font-size: 22px;
+                font-weight: 600;
+                border: none;
+                outline: none;
+                background-color: var(--teal-clr);
+                text-wrap: nowrap;
+            }
+        }
+    }
+
+    .home-section-button {
+        padding: 12px 30px;
+        margin-top: 80px;
+        font-size: 22px;
+        color: var(--white-clr);
+        background-color: transparent;
+        border: 2px solid var(--white-clr);
+        border-radius: 30px;
+    }
+}
