@@ -1,0 +1,309 @@
+@media screen and (max-width: 1200px) {
+    .home-section-form {
+        padding: 5% 8%;
+    }
+
+    .home-section-form-inputs {
+        grid-template-areas:
+            "currency-1 buy-and-sell"
+            "payment currency-2"
+            "how-much how-much"
+            "find-offer find-offer";
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .home-section-form-inputs select {
+        padding-inline: 20px 130px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    h3 {
+        font-size: 30px;
+    }
+
+    .logo {
+        width: 170px;
+    }
+
+    .nav ul li a,
+    .nav .buttons button,
+    .buy button,
+    .sell button {
+        font-size: 20px;
+    }
+
+    .home-section-form h1 {
+        font-size: 40px;
+    }
+
+    .home-section-button {
+        font-size: 20px;
+    }
+
+    .secure-payments-parent {
+        grid-template-areas:
+            "secure-payment-1 secure-payment-2"
+            "secure-payment-3 secure-payment-3";
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 100px;
+    }
+
+    .secure-payments:first-child {
+        grid-area: secure-payment-1;
+    }
+
+    .secure-payments:nth-child(3) {
+        grid-area: secure-payment-2;
+    }
+
+    .secure-payments:last-child {
+        grid-area: secure-payment-3;
+    }
+
+    .secure-payments-parent hr {
+        display: none;
+    }
+
+    .secure-payments h4 {
+        font-size: 22px;
+    }
+
+    .secure-payments p {
+        font-size: 18px;
+    }
+
+    .feature-section button {
+        font-size: 20px;
+    }
+
+    .buy-and-sell-section {
+        flex-direction: column;
+    }
+
+    .buy {
+        border-right: none;
+        border-bottom: 2px solid rgba(from var(--black-clr) r g b / 0.5);
+    }
+
+    .signup-section {
+        padding-block: 7%;
+    }
+
+    .signup-section h2 {
+        font-size: 60px;
+    }
+
+    .signup-section button {
+        font-size: 28px;
+    }
+
+    .footer-section {
+        padding-block: 7%;
+    }
+
+    .footer-section div img {
+        height: 36px;
+    }
+
+    .footer-section div h4 {
+        font-size: 25px;
+    }
+
+    .footer-section div a {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .nav ul {
+        display: none;
+    }
+
+    .home-section-form-inputs {
+        grid-template-areas:
+            "currency-1"
+            "buy-and-sell"
+            "payment"
+            "currency-2"
+            "how-much"
+            "how-much"
+            "find-offer"
+            "find-offer";
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .secure-payments h4 {
+        font-size: 20px;
+    }
+
+    .secure-payments p {
+        font-size: 16px;
+    }
+
+    .feature-section {
+        padding: 8%;
+    }
+
+    .feature-section h3 {
+        text-align: center;
+    }
+
+    .signup-section h2 {
+        font-size: 50px;
+    }
+
+    .footer-section {
+        grid-template-areas:
+            "spacio spacio spacio"
+            "product about support";
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 60px;
+    }
+
+    .footer-section div:first-child {
+        grid-area: spacio;
+    }
+
+    .footer-section div:nth-child(2) {
+        grid-area: product;
+    }
+
+    .footer-section div:nth-child(3) {
+        grid-area: about;
+    }
+
+    .footer-section div:last-child {
+        grid-area: support;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    h3 {
+        font-size: 25px;
+    }
+
+    .secure-payments-parent {
+        grid-template-areas:
+            "secure-payment-1"
+            "secure-payment-2"
+            "secure-payment-3";
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .footer-section div h4 {
+        font-size: 20px;
+    }
+
+    .footer-section div a {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .nav ul li a,
+    .nav .buttons button,
+    .feature-section button,
+    .buy button,
+    .sell button {
+        font-size: 16px;
+    }
+
+    .offer-state {
+        font-size: 17px;
+    }
+
+    .offer-state img {
+        width: 65px;
+    }
+
+    .signup-section h2 {
+        font-size: 40px;
+        margin-bottom: 70px;
+    }
+
+    .signup-section button {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .nav ul li a,
+    .nav .buttons button,
+    .feature-section button,
+    .buy button,
+    .sell button {
+        font-size: 15px;
+    }
+
+    .nav .buttons {
+        display: none;
+    }
+
+    .nav .menu-button {
+        display: flex;
+
+        &:active {
+            background-color: rgba(from var(--black-clr) r g b / 0.2);
+        }
+    }
+
+    .home-section-form h1 {
+        font-size: 30px;
+    }
+
+    .home-section-button {
+        font-size: 16px;
+    }
+
+    .home-section-form-inputs select,
+    .home-section-form-inputs input,
+    .home-section-form-inputs button {
+        font-size: 18px;
+    }
+
+    .offer-state {
+        padding: 10px 20px;
+        gap: 20px;
+        font-size: 15px;
+        flex-direction: column;
+    }
+
+    .offer-state img {
+        width: 55px;
+    }
+
+    .signup-section {
+        padding-block: 10%;
+    }
+
+    .signup-section h2 {
+        font-size: 35px;
+    }
+
+    .signup-section button {
+        font-size: 18px;
+    }
+
+    .footer-section div h4 {
+        font-size: 17px;
+    }
+
+    .footer-section div a {
+        font-size: 13px;
+    }
+
+    .copyright {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .footer-section {
+        grid-template-areas:
+            "spacio product"
+            "about support";
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 40px;
+    }
+}
