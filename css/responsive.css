@@ -299,6 +299,37 @@
 }
 
 @media screen and (max-width: 450px) {
+    .home-section-form h1 {
+        font-size: 25px;
+    }
+
+    .home-section-form-inputs select,
+    .home-section-form-inputs input,
+    .home-section-form-inputs button {
+        font-size: 15px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    .secure-payments h4 {
+        font-size: 18px;
+    }
+
+    .secure-payments p {
+        font-size: 14px;
+    }
+
+    .secure-payments a {
+        font-size: 13px;
+    }
+
+    .signup-section h2 {
+        font-size: 30px;
+        margin-bottom: 50px;
+    }
+
     .footer-section {
         grid-template-areas:
             "spacio product"

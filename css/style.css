@@ -107,6 +107,10 @@ h3 {
     height: 44px;
     border-radius: 50%;
     cursor: pointer;
+
+    & i {
+        cursor: pointer;
+    }
 }
 
 .home-section {
@@ -375,6 +379,10 @@ h3 {
     border: none;
     outline: none;
     border-radius: 15px;
+
+    &:active {
+        scale: 0.95;
+    }
 }
 
 .buy {
