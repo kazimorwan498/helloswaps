@@ -176,6 +176,10 @@
     .footer-section div:last-child {
         grid-area: support;
     }
+
+    .copyright {
+        padding: 5%;
+    }
 }
 
 @media screen and (max-width: 750px) {
@@ -189,6 +193,10 @@
             "secure-payment-2"
             "secure-payment-3";
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .secure-payments img {
+        width: 100px;
     }
 
     .footer-section div h4 {
@@ -207,6 +215,14 @@
     .buy button,
     .sell button {
         font-size: 16px;
+    }
+
+    .feature-section h3 {
+        margin-bottom: 30px;
+    }
+
+    .secure-payments-parent {
+        margin-bottom: 60px;
     }
 
     .offer-state {
@@ -299,6 +315,10 @@
 }
 
 @media screen and (max-width: 450px) {
+    .logo {
+        width: 140px;
+    }
+
     .home-section-form h1 {
         font-size: 25px;
     }
@@ -311,6 +331,10 @@
 
     h3 {
         font-size: 20px;
+    }
+
+    .currency-section h3 {
+        margin-bottom: 30px;
     }
 
     .secure-payments h4 {
@@ -331,10 +355,16 @@
     }
 
     .footer-section {
+        justify-items: start;
         grid-template-areas:
             "spacio product"
             "about support";
         grid-template-columns: repeat(2, 1fr);
-        row-gap: 40px;
+        gap: 40px 20%;
+        padding: 10%;
+    }
+
+    .footer-section div {
+        justify-content: center;
     }
 }
